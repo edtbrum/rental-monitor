@@ -14,5 +14,12 @@ class User(db.Model):
         nullable=False
     )
 
+    monitors = db.relationship(
+        "Monitor", 
+        backref="user", 
+        lazy="selectin", 
+        cascade="all, delete-orphan"
+    )
+
     def __repr__(self):
         return f"<User {self.username}>"
