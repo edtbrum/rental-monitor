@@ -7,6 +7,4 @@
 Ajudar o usuário a:
 
 * Encontrar imóveis com melhor custo-benefício
-* Monitorar preços por bairro
 * Acompanhar variação de aluguel ao longo do tempo
-* Ser avisado quando surgir uma oportunidade
