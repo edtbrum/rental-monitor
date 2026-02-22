@@ -1,0 +1,42 @@
+# Virtual env
+venv/
+.env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# SQLite database
+*.db
+*.sqlite3
+
+# Flask
+instance/
+.webassets-cache/
+
+# Migrations (opcional - ver abaixo)
+# migrations/versions/*.pyc
+
+# Logs
+*.log
+
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
+
+# MacOS
+.DS_Store
+
+# Coverage
+htmlcov/
+.coverage
+.pytest_cache/
+
+# Build
+dist/
+build/
+*.egg-info/
