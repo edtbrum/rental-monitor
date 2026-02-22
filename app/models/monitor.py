@@ -41,5 +41,12 @@ class Monitor(db.Model):
     min_bedrooms = db.Column(db.Integer, nullable=False)
     min_area = db.Column(db.Integer, nullable=False)
 
+    matches = db.relationship(
+        "Match", 
+        backref="monitor", 
+        lazy="selectin", 
+        cascade="all, delete-orphan"
+    )
+
     def __repr__(self):
         return f"<Monitor {self.id}>"

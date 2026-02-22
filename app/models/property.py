@@ -42,5 +42,12 @@ class Property(db.Model):
         cascade="all, delete-orphan"
     )
 
+    matches = db.relationship(
+        "Match", 
+        backref="property", 
+        lazy="selectin", 
+        cascade="all, delete-orphan"
+    )
+
     def __repr__(self):
         return f"<Property {self.id}>"
